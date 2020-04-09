@@ -1,0 +1,58 @@
+/* OLD NAVIGATION
+
+ul {
+    background-color: white;
+    padding: 0;
+    color: darkslategray;
+}
+
+.nav-link {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
+}
+a {
+    color: #497979;
+}
+a:hover {
+    color: white;
+    background-color: darkslategray;
+} */
+
+header {
+    color: #497979;
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.navbar {
+    padding: 0;
+    font-weight: bold;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    width: 90%;
+    margin: auto;
+    border-radius: 0;
+    background-color: #497979;
+    color: white;
+}
+
+.display-head {
+    font-style;
+}
+div h1 {
+    
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+/* PROJECT PAGE */
+.container {
+    border: 1px solid red;
+}
