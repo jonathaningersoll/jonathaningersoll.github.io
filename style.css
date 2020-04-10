@@ -41,6 +41,7 @@ header {
     border-radius: 0;
     background-color: #497979;
     color: white;
+    box-shadow: 10px 10px 50px 5px grey;
 }
 
 .display-head {
@@ -52,7 +53,10 @@ div h1 {
     font-weight: 600;
 }
 
-/* PROJECT PAGE */
-.container {
-    border: 1px solid red;
+img {
+    width: 100%;
+    border: 3px solid white;
+    box-shadow: 5px;
 }
+
+/* PROJECT PAGE */
