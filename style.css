@@ -85,8 +85,8 @@ header {
 }
 .about .container .row {
     background-color: blue;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .about .container .row .column {
     padding: 20px;
@@ -110,10 +110,14 @@ img {
     color: blue;
 }
 
-/* PROJECT */
+/* PROJECTS */
 
 .projects {
     padding: 30px;
+}
+
+.projects .container {
+    max-width: none;
 }
 
 .card {
@@ -122,7 +126,7 @@ img {
     margin-bottom: 30px;
     background-color: yellow;
     border-radius: 0;
-    padding: 8px;
+    padding: 12px;
 }
 
 .card .img {
@@ -145,6 +149,13 @@ img {
 }
 
 
+/* ONLINE */
+
+.online .container {
+    max-width: none;
+    padding: 30px;
+}
+
 /* FOOTER */
 
 footer{
@@ -152,7 +163,7 @@ footer{
     padding: 10px;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100%;    
 }
 
 .form-control {
