@@ -113,23 +113,35 @@ img {
 /* PROJECT */
 
 .projects {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 30px;
 }
 
 .card {
-    height: 100%;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background-color: yellow;
+    border-radius: 0;
+    padding: 8px;
 }
 
+.card .img {
+    border-radius: 0;
+}
+.card-img, .card-img-top {
+    border-radius: 0;
+}
 .card-title{
     color: black;
 }
 
 .card-text {
     color: black;
+}
+
+.btn {
+    border-radius: 0;
+    margin-right: auto;
 }
 
 
