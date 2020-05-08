@@ -81,9 +81,12 @@ header {
 }
 .about .container {
     max-width: none;
+    
 }
 .about .container .row {
     background-color: blue;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .about .container .row .column {
     padding: 20px;
@@ -102,21 +105,21 @@ img {
     width: 100%;
     background-color: yellow;
     margin: 0px;
-    text-align: center;
+    padding: 20px;
+    border-bottom: 8px solid black;
+    color: blue;
 }
 
 /* PROJECT */
 
-.project {
-    
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    background-color: blue;
+.projects {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .card {
-    margin: 20px;
     height: 100%;
 
 }
@@ -128,6 +131,10 @@ img {
 .card-text {
     color: black;
 }
+
+
+/* FOOTER */
+
 footer{
     color: white;
     padding: 10px;
