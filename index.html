@@ -5,47 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="online.html">Online</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-      </header>
+      <!-- HEADER AND NAV BAR -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <!-- ABOUT LINK -->
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <!-- PROJECTS LINK -->
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <!-- ONLINE PRESENSE LINK -->
+              <a class="nav-link" href="online.html">Online</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<!-- JUMBOTRON -->
-      <div class="jumbotron">
-        <h1 class="display-head">Jonathan Ingersoll</h1>
-        <p class="lead">Process-driven, results-focused.</p>
-        <hr class="my-4">
-        <p>Hi! Thank you for visiting my page! To know more about me, check out my <strong><a href="projects.html">About</a></strong> page.</p>
-        <p>To see what I've done, I have a <strong><a href="projects.html">Project</a></strong> page with an interesting and diverse range of projects.</p>
-        <p>I do try to maintain a presence <strong><a href="online.html">Online</a></strong>. Take a look at the various online mediums I utilize like my Github and LinkedIn.</p>
+  <!-- JUMBOTRON -->
+    <div class="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h1 class="display-head">Jonathan Ingersoll</h1>
+            <p>Process-driven, results-focused.</p>
+            <p>Welcome to my portfolio page. Here you will get to know me, view some of the projects I have worked on, and how to connect with me on the interwebs</p>
+          </div>
+          <div class="col-8" id="vertcc">
+            <img src="Assets/self.jpg" />
+            <br />
+          </div>
+        </div>
       </div>
+    </div>
 
-      <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
-        <p>Copyright &copy; 2020 Jonathan Ingersoll</p>
-      </footer>
+  <div class="space-the-final-frontier" id="about"></div>
+
+    <!-- About -->
+  <div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h2>Introduction</h2>
+          <p>
+            Hi, I'm Jonathan Ingersoll,
+          </p>
+          <p>
+            <h3>Developer</h3>
+            <p>
+              As a developer, I have experience developing in C#, building APIs, and MVCs. I have been part of code projects leveraging Github in a team environment.
+            </p>
+            <h3>Administrator</h3>
+            <p>
+              I have experience building and maintaining a Microsoft Active Directory domain and infrastructure in Server 2016, building out a cluster infrastructure using Hyper-V, Microsoft storage solutions and building Microsoft networking solutions including DNS/DHCP.
+            </p>
+          </p>
+        </div>
+        <div class="column">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space-the-final-frontier"></div>
+
+  <div class="row" id="projects">
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="./Assets/css_project.jpg" class="card-img-top" alt="CSS Monster">
+        <div class="card-body">
+          <h5 class="card-title">CSS Monster</h5>
+          <hr />
+          <p class="card-text">Oscar the Grouch built in CSS</p>
+          <a href="https://codepen.io/jonathaningersoll/pen/MWwGqbZ" class="btn btn-primary">CodePen</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="./Assets/blackjack.jpg" class="card-img-top" alt="Badge Security">
+        <div class="card-body">
+          <h5 class="card-title">BlackJack</h5>
+          <hr />
+          <p class="card-text">A simple BlackJack program exercise written with a teammate in C#.</p>
+          <a href="https://github.com/jonathaningersoll/BlackJack" class="btn btn-primary">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="./Assets/cafemenu.jpg" class="card-img-top" alt="Badge Security">
+        <div class="card-body">
+          <h5 class="card-title">Cafe Menu</h5>
+          <hr />
+          <p class="card-text">A cafe menu console application I wrote in C# & Visual Studio.</p>
+          <a href="https://github.com/jonathaningersoll/Komodo_Cafe" class="btn btn-primary">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="./Assets/claimprogramjpg.jpg" class="card-img-top" alt="Badge Security">
+        <div class="card-body">
+          <h5 class="card-title">Claims processing</h5>
+          <hr />
+          <p class="card-text">A simple claims processing console application I wrote in C#.</p>
+          <a href="https://github.com/jonathaningersoll/Komodo_Claims" class="btn btn-primary">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="./Assets/badgesecurity.jpg" class="card-img-top" alt="Badge Security">
+          <div class="card-body">
+            <h5 class="card-title">Claims processing</h5>
+            <hr />
+            <p class="card-text">A security badge console application I wrote in C#.</p>
+            <a href="https://github.com/jonathaningersoll/Komodo_Insurance" class="btn btn-primary">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="./Assets/blackjack.jpg" class="card-img-top" alt="Badge Security">
+          <div class="card-body">
+            <h5 class="card-title">DigiDex</h5>
+            <hr />
+            <p class="card-text">A game card/sports card cataloging API written in C# with Entity Framework. This was our team project for ElevenFifty BlueBadge.</p>
+            <a href="https://github.com/kmpcool123/DigiDex" class="btn btn-primary">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    https://github.com/kmpcool123/DigiDex
+
+    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+      <p>Copyright &copy; 2020 Jonathan Ingersoll</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
