@@ -15,6 +15,7 @@ header {
 }
 .navbar {
     font-size: 1em;
+    font-weight: bold;
     padding: 0;
 }
 
@@ -27,7 +28,7 @@ header {
     background-color: white;
 }
 .navbar-light .navbar-nav .nav-link{
-    color: blue;
+    color: steelblue;
 }
 
 
@@ -81,21 +82,19 @@ header {
 }
 .about .container {
     max-width: none;
-    
+    background-color: steelblue;
 }
-.about .container .row {
-    background-color: blue;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+
 .about .container .row .column {
-    padding: 20px;
-    max-width: 800px;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    max-width: 650px;
 }
 
 img {
     width: 60%;
-    border: 3px solid black;
+    border: 3px solid yellow;
     float: right;
     border-radius: 1,4;
 }
@@ -107,9 +106,12 @@ img {
     margin: 0px;
     padding: 20px;
     border-bottom: 8px solid black;
-    color: blue;
+    color: steelblue;
 }
 
+.column p a {
+    color: yellow;
+}
 /* PROJECTS */
 
 .projects {
@@ -124,7 +126,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    background-color: yellow;
+    background-color: steelblue;
     border-radius: 0;
     padding: 12px;
 }
