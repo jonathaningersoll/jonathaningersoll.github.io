@@ -114,6 +114,28 @@ img {
 }
 /* PROJECTS */
 
+.github-repos{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.repo{
+    max-width: 400px;
+    min-width: 400px;
+    background-color: steelblue;
+    padding: 0px 10px 10px 10px;
+    margin: 5px;
+    border: 1px solid white;
+}
+
+.repo a{
+    color: white;
+}
+
+
+/*
 .projects {
     padding: 30px;
 }
@@ -149,7 +171,7 @@ img {
     border-radius: 0;
     margin-right: auto;
 }
-
+*/
 
 /* ONLINE */
 
