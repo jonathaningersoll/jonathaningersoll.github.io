@@ -19,7 +19,7 @@ function displayResults(json) {
         let pageLink = document.createElement('a');
         let cloneLink = document.createElement('a');
         let container = document.createElement('div');
-        let head = document.createElement('h2');
+        let head = document.createElement('h3');
         let p = document.createElement('p');
         let cloneP = document.createElement('p');
         
@@ -30,7 +30,7 @@ function displayResults(json) {
         p.innerText = repo.description;
         container.className = 'repo';
         
-        document.querySelector('div').appendChild(container);
+        document.querySelector('.github-repos').appendChild(container);
 
         container.appendChild(head);
         head.appendChild(pageLink);

@@ -117,15 +117,17 @@ img {
 .github-repos{
     display: flex;
     flex-wrap: wrap;
-
+    background-color: lightblue;
+    padding: 20px;
 }
 
 .repo{
-    max-width: 300px;
-    min-width: 300px;
-    background-color: lightblue;
+    max-width: 400px;
+    min-width: 400px;
+    background-color: steelblue;
     padding: 0px 10px 10px 10px;
-    margin: 10px;
+    margin: 5px;
+    border: 1px solid white;
 }
 
 .repo a{
