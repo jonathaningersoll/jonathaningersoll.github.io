@@ -11,13 +11,27 @@ function fetchResults(){
 }
 
 function displayResults(json) {
-    console.log(json);
-    
+console.log(json);    
     let repos = json;
     for(repo of repos){
+
+        let repoDesc;
+        let homePage;
+        if(repo.description == "null"){
+            repoDesc = "";
+        }else{
+            repoDesc = repo.description;
+        }
+
+        if(repo.homepage == "null"){
+            homePage = "";
+        }else{
+            homePage = repo.homepage;
+        }
+
         
         let pageLink = document.createElement('a');
-        let cloneLink = document.createElement('a');
+        let homepageLink = document.createElement('a');
         let container = document.createElement('div');
         let head = document.createElement('h3');
         let p = document.createElement('p');
@@ -25,9 +39,9 @@ function displayResults(json) {
         
         pageLink.href = repo.html_url;
         pageLink.textContent = repo.name;
-        cloneLink.href = repo.clone_url;
-        cloneLink.textContent = " - Clone Repository";
-        p.innerText = repo.description;
+        homepageLink.href = homePage;
+        homepageLink.textContent = " - Homepage";
+        p.innerText = repoDesc;
         container.className = 'repo';
         
         document.querySelector('.github-repos').appendChild(container);
@@ -36,7 +50,10 @@ function displayResults(json) {
         head.appendChild(pageLink);
         container.appendChild(p);
         container.appendChild(cloneP);
-        cloneP.appendChild(cloneLink);
+        if(homepageLink != homePage){
+        }else {
+            cloneP.appendChild(homepageLink);
+        }
 
     }
 }
