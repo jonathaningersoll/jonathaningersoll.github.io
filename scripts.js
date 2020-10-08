@@ -16,6 +16,13 @@ function displayResults(json) {
     let repos = json;
     for(repo of repos){
         
+        let homepage;
+        if(repo.homepage = null){
+            homepage = "";
+        }else{
+            homepage = repo.homepage;
+        }
+
         let pageLink = document.createElement('a');
         let cloneLink = document.createElement('a');
         let container = document.createElement('div');
@@ -27,7 +34,7 @@ function displayResults(json) {
         pageLink.textContent = repo.name;
         cloneLink.href = repo.clone_url;
         cloneLink.textContent = " - Clone Repository";
-        p.innerHTML = `${repo.description} + <a href="${repo.homepage}">Homepage</a>`;
+        p.innerHTML = `${repo.description} + <a href="${homepage}">Homepage</a>`;
         container.className = 'repo';
         
         document.querySelector('.github-repos').appendChild(container);
