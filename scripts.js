@@ -27,7 +27,7 @@ function displayResults(json) {
         pageLink.textContent = repo.name;
         cloneLink.href = repo.clone_url;
         cloneLink.textContent = " - Clone Repository";
-        p.innerText = repo.description;
+        p.innerText = repo.homepage + repo.description;
         container.className = 'repo';
         
         document.querySelector('.github-repos').appendChild(container);
