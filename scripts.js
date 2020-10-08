@@ -20,7 +20,7 @@ function displayResults(json) {
         if(repo.homepage = null){
             homepage = "";
         }else{
-            homepage = repo.homepage;
+            homepage = `<a href="${homepage}">Homepage</a>`;
         }
 
         let pageLink = document.createElement('a');
@@ -34,7 +34,7 @@ function displayResults(json) {
         pageLink.textContent = repo.name;
         cloneLink.href = repo.clone_url;
         cloneLink.textContent = " - Clone Repository";
-        p.innerHTML = `${repo.description} + <a href="${homepage}">Homepage</a>`;
+        p.innerHTML = `${repo.description} + ${homepage};
         container.className = 'repo';
         
         document.querySelector('.github-repos').appendChild(container);
