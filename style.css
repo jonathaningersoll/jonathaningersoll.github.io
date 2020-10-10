@@ -4,33 +4,22 @@ body {
 }
 
 /* HEADER ELEMENTS */
-header {
-    width: 100%;
-    margin: auto;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 40px;
-    background-color: yellow;
-    border-bottom: 8px solid black;
+nav{
+    background: transparent;
 }
-.navbar {
-    font-size: 1em;
-    font-weight: bold;
-    padding: 0;
+.nav-link{
+    font-size: 1.25em;
+}
+.nav-link a:hover{
+    text-decoration: underline;
+}
+.active{
+    border: 2px solid grey;
 }
 
-.nav-item a{
-    padding: 20px;
-    height: 100%;
-    width: 70px;
+.card{
+    border-radius: 0px;
 }
-.nav-link:hover{
-    background-color: white;
-}
-.navbar-light .navbar-nav .nav-link{
-    color: steelblue;
-}
-
 
 /* HOME */
 .home {
@@ -40,7 +29,6 @@ header {
     border-radius: 0;
     background-color: white;    
     color: black;
-    background-image: url("Assets/pic1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50px;
@@ -94,7 +82,7 @@ header {
 
 img {
     width: 60%;
-    border: 3px solid yellow;
+    border: 3px solid black;
     float: right;
     border-radius: 1,4;
 }
@@ -117,21 +105,23 @@ img {
 .github-repos{
     display: flex;
     flex-wrap: wrap;
-    background-color: lightblue;
+    background-color: white;
     padding: 20px;
 }
 
 .repo{
-    max-width: 400px;
-    min-width: 400px;
-    background-color: steelblue;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    background-color: white;
     padding: 0px 10px 10px 10px;
     margin: 5px;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .repo a{
-    color: white;
+    color: black;
 }
 
 
@@ -142,15 +132,6 @@ img {
 
 .projects .container {
     max-width: none;
-}
-
-.card {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    background-color: steelblue;
-    border-radius: 0;
-    padding: 12px;
 }
 
 .card .img {

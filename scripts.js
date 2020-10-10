@@ -16,7 +16,6 @@ console.log(json);
     for(repo of repos){
 
         let repoDesc;
-        let homePage;
         if(repo.description == "null"){
             repoDesc = "";
         }else{
@@ -29,31 +28,26 @@ console.log(json);
             homePage = repo.homepage;
         }
 
-        
-        let pageLink = document.createElement('a');
-        let homepageLink = document.createElement('a');
-        let container = document.createElement('div');
-        let head = document.createElement('h3');
+        let card = document.createElement('div');
+        card.classList.add('card');
+        let cardBody = document.createElement('div');
+        card.classList.add('card-body');
+        let head = document.createElement('h5');
+        head.classList.add('card-title');
         let p = document.createElement('p');
-        let cloneP = document.createElement('p');
-        
-        pageLink.href = repo.html_url;
-        pageLink.textContent = repo.name;
-        homepageLink.href = homePage;
-        homepageLink.textContent = " - Homepage";
-        p.innerText = repoDesc;
-        container.className = 'repo';
-        
-        document.querySelector('.github-repos').appendChild(container);
+        p.classList.add('card-text');
+        p.innerText = `${repoDesc}`;
+        let link = document.createElement('a');
+        link.href = `${homePage}`;
+        link.classList.add('btn');
+        link.classList.add('btn-primary');
+        link.innerText = "Homepage";
 
-        container.appendChild(head);
-        head.appendChild(pageLink);
-        container.appendChild(p);
-        container.appendChild(cloneP);
-        if(homepageLink != homePage){
-        }else {
-            cloneP.appendChild(homepageLink);
-        }
+        document.querySelector('.github-repos').appendChild(card);
 
+        card.appendChild(cardBody);
+        cardBody.appendChild(head);
+        cardBody.appendChild(p);
+        cardBody.appendChild(link);
     }
 }

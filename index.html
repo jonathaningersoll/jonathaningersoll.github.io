@@ -9,33 +9,39 @@
     <title>Jonathan Ingersoll</title>
 </head>
 <body>
-    <header>
-      <!-- HEADER AND NAV BAR -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <!-- ABOUT LINK -->
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <!-- PROJECTS LINK -->
-                <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <!-- ONLINE PRESENSE LINK -->
-              <a class="nav-link" href="#online">Online</a>
-            </li>
-          </ul>
+
+  <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+<!-- GITHUB PROJECTS -->
+
+    <div class="github-repos">
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
-      </nav>
-    </header>
+
+    </div>
 
   <!-- JUMBOTRON -->
     <div class="home">
@@ -94,97 +100,10 @@
   </div>
   <div class="space-the-final-frontier" id="projects"><h2>Projects</h2></div>
 
-  <div class="github-repos">
 
-  </div>
 
   <!-- OLD PROJECTS PAGE
-    <div class="projects">
-    <div class="row">
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <img src="./Assets/css_project.jpg" class="card-img-top" alt="CSS Monster">
-          <div class="card-body">
-            <h5 class="card-title">CSS Monster</h5>
-            <hr />
-            <p class="card-text">Oscar the Grouch built in CSS</p>
-            <a href="https://codepen.io/jonathaningersoll/pen/MWwGqbZ" class="btn btn-primary">CodePen</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <img src="./Assets/blackjack.jpg" class="card-img-top" alt="Badge Security">
-          <div class="card-body">
-            <h5 class="card-title">BlackJack</h5>
-            <hr />
-            <p class="card-text">A simple BlackJack program exercise written with a teammate in C#.</p>
-            <a href="https://github.com/jonathaningersoll/BlackJack" class="btn btn-primary">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <img src="./Assets/cafemenu.jpg" class="card-img-top" alt="Badge Security">
-          <div class="card-body">
-            <h5 class="card-title">Cafe Menu</h5>
-            <hr />
-            <p class="card-text">A cafe menu console application I wrote in C# & Visual Studio.</p>
-            <a href="https://github.com/jonathaningersoll/Komodo_Cafe" class="btn btn-primary">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <img src="./Assets/claimprogramjpg.jpg" class="card-img-top" alt="Badge Security">
-          <div class="card-body">
-            <h5 class="card-title">Claims processing</h5>
-            <hr />
-            <p class="card-text">A simple claims processing console application I wrote in C#.</p>
-            <a href="https://github.com/jonathaningersoll/Komodo_Claims" class="btn btn-primary">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <img src="./Assets/badgesecurity.jpg" class="card-img-top" alt="Badge Security">
-          <div class="card-body">
-            <h5 class="card-title">Claims processing</h5>
-            <hr />
-            <p class="card-text">A security badge console application I wrote in C#.</p>
-            <a href="https://github.com/jonathaningersoll/Komodo_Insurance" class="btn btn-primary">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <img src="./Assets/blackjack.jpg" class="card-img-top" alt="Badge Security">
-          <div class="card-body">
-            <h5 class="card-title">DigiDex</h5>
-            <hr />
-            <p class="card-text">A game card/sports card cataloging API written in C# with Entity Framework. This was our team project for ElevenFifty BlueBadge.</p>
-            <a href="https://github.com/kmpcool123/DigiDex" class="btn btn-primary">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <div class="card" style="width: 18rem;">
-          <img src="./Assets/scrnshot_simplecrm.jpg" class="card-img-top" alt="SimpleCRM MVC">
-          <div class="card-body">
-            <h5 class="card-title">SimpleCRM Web App</h5>
-            <hr />
-            <p class="card-text">A very simple CRM project done in C# and Visual Studio Community. This was my ElevenFifty RedBadge final project.</p>
-            <a href="https://github.com/jonathaningersoll/SimpleCRM" class="btn btn-primary">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 -->
     <div class="space-the-final-frontier" id="online"><h2>Online Presence</h2></div>
 
